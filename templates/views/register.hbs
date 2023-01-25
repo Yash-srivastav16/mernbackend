@@ -1,0 +1,39 @@
+<html>
+    <head>
+        {{>header}} 
+    </head>
+
+    <body>
+<main class="box">
+    <h2>Register</h2>
+    <form action="/register" method="POST">
+        <div class="inputBox">
+            <label for="userName">Name</label>
+            <input type="text" name="userName" id="userName" placeholder="type your Name" required/>
+        </div>
+         <div class="inputBox">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="userName" placeholder="type your Email" required/>
+        </div>
+        <div class="inputBox">
+            <label for="userPassword">Password</label>
+            <input type="password" name="userPassword" id="userPassword" placeholder="type your password"
+                   required/>
+        </div>
+        <div class="inputBox">
+            <label for="userConfirmPassword">Confirm Password</label>
+            <input type="password" name="userConfirmPassword" id="userConfirmPassword" placeholder="confirm your password"
+                   required/>
+        </div>
+        <button type="submit" name="" style="float: left;">Submit</button>
+        <a class="button" href="login.hbs" style="float: left;">Login</a>
+    </form>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+        integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+</body>
+
+
+</html>
